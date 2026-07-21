@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>じゃんスコア | 麻雀の対局スコア記録・ランキングアプリ</title>
+<meta name="description" content="友人・仲間内の麻雀の成績を、面倒な計算なしで記録できるアプリ「じゃんスコア」。ウマオカ自動計算、グループ管理、成績のグラフ表示に対応。">
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    color: #1c1c1e;
+    background: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e5e7; background: #121214; }
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+
+  header.hero {
+    text-align: center;
+    padding: 56px 20px 40px;
+  }
+  .icon {
+    width: 112px;
+    height: 112px;
+    border-radius: 26px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin: 0 0 8px;
+  }
+  .tagline {
+    color: #6c6c70;
+    font-size: 1.02rem;
+    margin: 0 auto 28px;
+    max-width: 480px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .tagline { color: #a1a1a6; }
+  }
+
+  .badge-link {
+    display: inline-block;
+    line-height: 0;
+  }
+  .badge-link img {
+    height: 52px;
+  }
+  .price-note {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #8e8e93;
+  }
+
+  section {
+    margin-top: 48px;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 0 0 18px;
+    color: #1c6b61;
+  }
+  @media (prefers-color-scheme: dark) {
+    h2 { color: #5fc4b3; }
+  }
+
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .features li {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 0.94rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .features li { background: #1c1c1e; border-color: #2c2c2e; }
+  }
+  .features strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.98rem;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .links a {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #ececec;
+    color: #1c6b61;
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .links a { background: #1c1c1e; border-color: #2c2c2e; color: #5fc4b3; }
+  }
+
+  footer {
+    margin-top: 64px;
+    text-align: center;
+    font-size: 0.82rem;
+    color: #a1a1a6;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <img class="icon" src="assets/janscore-icon.png" alt="じゃんスコア アイコン">
+    <h1>じゃんスコア</h1>
+    <p class="tagline">友人・仲間内の麻雀の成績を、面倒な計算なしで記録できるアプリ。<br>素点を入力するだけで、順位・ウマオカを自動計算します。</p>
+    <a class="badge-link" href="https://apps.apple.com/jp/app/id6789905143" target="_blank" rel="noopener">
+      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="App Storeからダウンロード">
+    </a>
+    <p class="price-note">基本無料(広告非表示は買い切り¥300)</p>
+  </header>
+
+  <section>
+    <h2>主な機能</h2>
+    <ul class="features">
+      <li><strong>対局結果の入力</strong>素点を入力するだけで順位・ウマオカを自動計算。最後の1人は残り点数を自動算出。</li>
+      <li><strong>グループ管理</strong>友人グループごとにメンバー・ルール・対局履歴を管理。ジャンル分けにも対応。</li>
+      <li><strong>ルールプリセット</strong>配給原点・精算原点・ウマ・チップ設定を名前を付けて保存し、ワンタップで適用。</li>
+      <li><strong>成績の可視化</strong>累計ポイント・平均順位のランキング表示や、ポイント推移のグラフ表示。</li>
+      <li><strong>収支換算</strong>点数レート・チップレートを設定すれば、収支換算での表示も可能。</li>
+      <li><strong>期間別集計</strong>今週・今月・今年・カスタム期間で成績を絞り込み、月別の推移も確認可能。</li>
+      <li><strong>バックアップ</strong>対局データをファイルに書き出し・読み込みでき、機種変更時も安心。</li>
+      <li><strong>オンライン共有</strong>共有コードを発行すれば、複数人でリアルタイムに同じ卓のスコアを記録可能。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>リンク</h2>
+    <div class="links">
+      <a href="https://apps.apple.com/jp/app/id6789905143" target="_blank" rel="noopener">App Storeで見る</a>
+      <a href="https://rentry.co/janscore-privacy" target="_blank" rel="noopener">プライバシーポリシー</a>
+      <a href="https://forms.gle/SsojNnff2yaaCG3bA" target="_blank" rel="noopener">お問い合わせ</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 じゃんスコア
+  </footer>
+
+</div>
+
+</body>
+</html>
